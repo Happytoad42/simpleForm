@@ -1,0 +1,6 @@
+body {
+  background-color: red;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
