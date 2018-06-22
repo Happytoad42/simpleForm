@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>A simple form</title>
+    <meta charset="UTF-8">
+    <title>A simple form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
+
 <body>
-	<h1 class="header__title">Hello, I will be a simple form someday!</h1>
-	
+    <div class="main__wrapper">
+        <form  id="survey-form" action="#" method="get" class="form__main">
+            <h1 class="form__header">Survey form</h1>
+            <div class="form__wrapper">
+            <p class="form__description">We'd really like to know more about you. It will help us improve and will only take a couple of minutes of your time.</p>
+            <div class="form__item">
+                <label id="name-label" for="name">* Name:</label>
+                <input type="text" name="user" id="name" minlength="2" placeholder="Enter your name here" required>
+            </div>
+            <div class="form__item">
+                <label id="email-label" for="email">* Email:</label>
+                <input type="email" name="email" id="uemail" placeholder="foo@bar.com" required>
+            </div>
+            <div class="form__item">
+                <label id="number-label" for="number">* Age:</label>
+                <input type="number" name="age" id="number" minlength="1" maxlength="3" placeholder="Enter your age here (numbers only)" required>
+            </div>
+            <div class="form__item ">
+            	<p id="radio-label">How often do you use our services?</p>
+            	<input id="fnever" type="radio" name="frequency" value="never">
+            	<label for="fnever">Never</label>
+            	<input id="fsometimes" type="radio" name="frequency" value="sometimes" checked>
+            	<label for="fsometime">Sometimes</label>
+            	<input id="foften" type="radio" name="frequency" value="often">
+            	<label for="foften">Often</label>
+            </div>
+            <div class="form__item">
+                <label id="dropdown-label" for="dropdown">Would you recommend our service to your friend?</label>
+                <select " id="dropdown" size="1">
+	            	<option value="no ">No</option>
+	            	<option value="maybe ">Maybe</option>
+	            	<option value="dontknow ">Don't know</option>
+	            	<option value="mostlikely ">Most likely</option>
+	            	<option value="yes ">Definitely</option>
+            	</select>
+            </div>
+            <div class="form__item ">
+            	<p class="form__text">What things would you like us to focus the most</p>
+            	<input type="checkbox" id="" name="suggestion" value="">
+            	<label for="">Quality of the product</label>
+            	<input type="checkbox" id="" name="suggestion" value="">
+            	<label for="">Customer service</label>
+            	<input type="checkbox" id="" name="suggestion" value="">
+            	<label for="">Delivery range</label>
+            	<input type="checkbox" id="" name="suggestion" value="">
+            	<label for="">Delivery speed</label>
+            	<input type="checkbox" id="" name="suggestion" value="">
+            	<label for="">Price reduction</label>
+            </div>
+            <div class="form__item ">
+            	<p class="form__text">Aditional comments and suggestions</p>
+            	<textarea id="textarea" rows="5" placeholder="Write your comments here..."></textarea>
+            </div>
+            <div class="form__item ">
+            	<label for="terms">I agree to everything and want to make this world a better place</label>
+            	<input type="checkbox" id=""terms" name="terms" required>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </div>
+        </form>
+    </div>
 </body>
+
 </html>
