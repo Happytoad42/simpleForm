@@ -11,9 +11,19 @@ html {
   display: -o-flex;
   display: flex;
   width: 33%;
-  min-width: 400px;
+  min-width: 600px;
   height: 800px;
-  margin: 50px auto; }
+  margin: 50px auto;
+  box-shadow: 5px 5px 3px #616161; }
+
+.form__item {
+  width: 100%; }
+
+.form__item:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%; }
 
 .form__wrapper {
   display: -moz-flex;
@@ -39,3 +49,40 @@ html {
   text-align: center;
   min-width: 300px;
   margin-bottom: 40px; }
+
+.form__item--terms {
+  width: 100%;
+  text-align: center;
+  min-width: 300px;
+  margin: 20px 0; }
+
+.form__left,
+.form__right {
+  display: inline-block;
+  width: 42%;
+  vertical-align: middle; }
+
+.form__left {
+  text-align: right;
+  margin-right: 15px;
+  margin-bottom: 10px; }
+
+.form__right {
+  text-align: left; }
+
+.form__list {
+  list-style: none; }
+
+.form__btn--submit {
+  border: solid 3px #311b92;
+  font-size: 22px;
+  padding: 7px 15px;
+  background-color: #fafafa;
+  box-shadow: 0px 5px 5px rgba(12, 3, 23, 0.1); }
+
+.form__btn--submit:hover {
+  color: #fafafa;
+  background-color: #311b92; }
+
+.form__btn--submit:active {
+  background-color: #4e32cf; }
